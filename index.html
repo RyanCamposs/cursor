@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="left-section">
+        <button class="botao2" onclick="fundo()"></button>
+        <h3>Tipos de Cursores</h3>
+        <ul>
+            <li onmouseenter="alias()" id="alias" class="li">alias</li>
+            <li onmouseenter="allscroll()" id="allscroll" class="li">all-scroll</li>
+            <li onmouseenter="auto()" id="auto" class="li">auto</li>
+            <li onmouseenter="cell()" id="cell" class="li">cell</li>
+            <li onmouseenter="contextmenu()" id="context-menu" class="li">context-menu</li>
+            <li onmouseenter="colresize()" id="col-resize" class="li">col-resize</li>
+            <li onmouseenter="copy()" id="copy" class="li">copy</li>
+            <li onmouseenter="crosshair()" id="crosshair" class="li">crosshair</li>
+            <li onmouseenter="dft()" id="default" class="li">default</li>
+            <li onmouseenter="eresize()" id="e-resize" class="li">e-resize</li>
+            <li onmouseenter="ewresize()" id="ew-resize" class="li">ew-resize</li>
+            <li onmouseenter="grab()" id="grab" class="li">grab</li>
+        </ul>
+
+    </div>
+    <div class="right-section">
+        <button class="botao" onclick="fundo()"></button>
+        <div id="div-style">
+            <p id="res">cursor: </p>
+            <button onclick="copiarTexto()" class="copy"></button>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

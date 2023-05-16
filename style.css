@@ -1,0 +1,136 @@
+*{
+    padding: 0; 
+    margin: 0;
+}
+
+body {
+    display: flex;
+    width: 96vw;
+    height: 96vh;
+    transition: 0.4s;
+
+}
+
+.left-section {
+    width: 30%;
+    height: 75%;
+    border: 1px solid grey;
+    margin: 15px 30px;
+    text-align: center;
+    transition: 1s;
+}
+
+h3 {
+    background-color: rgb(76, 125, 214);
+    padding: 4px;
+    color: white;
+   
+}
+
+.li {
+    padding: 10px;
+    list-style:none;
+    font-size: 25px;
+    border: 1px solid black;
+    transition: 1s;
+    
+}
+
+.li:hover {
+    font-size: 30px;
+    background-color: crimson;
+    color: white;
+    
+}
+
+.right-section {
+    width: 70%;
+    background-color: rgba(231, 231, 231, 0.222);
+    height: 100%;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#div-style {
+    width: 450px;
+    height: 50px;
+    background-color: rgb(148, 148, 148);
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    position: relative;
+  
+}
+
+.botao {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url('dark.png');
+    background-size: cover;
+    background-position: center
+}
+
+.botao2 {
+    position: absolute;
+    display: none;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: url('dark.png');
+    background-size: cover;
+    background-position: center
+}
+ 
+.black {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+.black-border {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+.copy {
+    background: url('copy.png');
+    background-size: cover;
+    padding: 10px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;display: none;
+
+}
+
+
+@media screen and (max-width: 760px){
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .botao {
+        display: none;
+    }
+    .botao2 {
+        display: flex;
+    }
+}
